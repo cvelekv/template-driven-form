@@ -11,6 +11,7 @@ import { TemplateFormComponent } from './template-form/template-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { UpdateOnComponent } from './update-on/update-on.component';
 import { ControlValueAccessorComponent } from './control-value-accessor/control-value-accessor.component';
+import { ReactiveDynamicFormComponent } from './reactive-dynamic-form/reactive-dynamic-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ControlValueAccessorComponent } from './control-value-accessor/control-
     TemplateFormComponent,
     ReactiveFormComponent,
     UpdateOnComponent,
-    ControlValueAccessorComponent
+    ControlValueAccessorComponent,
+    ReactiveDynamicFormComponent
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
   providers: [],

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { BasicFormComponent } from './basicForm/basic-form.component';
 import { ControlValueAccessorComponent } from './control-value-accessor/control-value-accessor.component';
+import { ReactiveDynamicFormComponent } from './reactive-dynamic-form/reactive-dynamic-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { StarterReactiveFormComponent } from './starter-reactive-form/starter-reactive-form.component';
 import { StarterTemplateFormComponent } from './starter-template-form/starter-template-form.component';
@@ -18,8 +19,8 @@ const routes: Routes = [
   { path: "templateform", component: TemplateFormComponent },
   { path: "reactiveform", component: ReactiveFormComponent },
   { path: "updateon", component: UpdateOnComponent },
-  { path: "controlvalueaccessor", component: ControlValueAccessorComponent }
-  // { path: "reactivedynamicform", component: ReactiveDynamicFormComponent }
+  { path: "controlvalueaccessor", component: ControlValueAccessorComponent },
+  { path: "reactivedynamicform", component: ReactiveDynamicFormComponent }
 ];
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(routes)],
@@ -33,8 +34,7 @@ export class AppRoutingModule {
     TemplateFormComponent,
     ReactiveFormComponent,
     UpdateOnComponent,
-    ControlValueAccessorComponent
-
-    // ReactiveDynamicFormComponent
+    ControlValueAccessorComponent,
+    ReactiveDynamicFormComponent
   ];
 }
